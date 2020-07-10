@@ -22,6 +22,9 @@ RUN mkdir -p /usr/share/man/man1 \
     && mkdir /var/log/supervisord /var/run/supervisord
 
 ENV NEXTCLOUD_UPDATE=1
+ENV OVERWRITEHOST=nas.schule-erstfeld.ch
+ENV OVERWRITEPROTOCOL=https
+ENV OVERWRITEWEBROOT=/
 
 ADD ./source/supervisord.conf /etc/supervisor/supervisord.conf
 ADD ./source/smb.conf /etc/samba/smb.conf
