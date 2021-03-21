@@ -1,5 +1,5 @@
 # :: Header
-        FROM nextcloud:20-apache
+        FROM nextcloud:21-apache
         ARG DEBIAN_FRONTEND=noninteractive
 
 # :: Run
