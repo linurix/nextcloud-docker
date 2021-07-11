@@ -1,5 +1,5 @@
 # :: Header
-        FROM nextcloud:21-apache
+        FROM nextcloud:22-apache
         ARG DEBIAN_FRONTEND=noninteractive
 
 # :: Run
@@ -10,6 +10,7 @@
                 && apt-get install -y \
                         smbclient \
                         libsmbclient-dev \
+                        php-imagick \
         && pecl install smbclient \
         && docker-php-ext-enable smbclient
 
