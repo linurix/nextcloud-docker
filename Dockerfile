@@ -10,7 +10,6 @@
                 && apt-get install -y \
                         smbclient \
                         libsmbclient-dev \
-                        php-imagick \
         && pecl install smbclient \
         && docker-php-ext-enable smbclient
 
